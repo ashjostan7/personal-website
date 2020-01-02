@@ -1,0 +1,89 @@
+*,
+*::before
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+@font-face{
+	font-family: PopLight;
+	src: url('./fonts/Poppins-Light.ttf');
+}
+@font-face{
+	font-family: PopRegular;
+	src: url('./fonts/Poppins-Regular.ttf');
+}
+body{
+	font-family: PopLight;
+	background: #C9C9C9;
+
+}
+
+.page{
+	color: black;
+	min-height: 70vh;
+	display:grid;
+	grid-template-rows:  1fr 2fr 1fr 1fr;
+}
+
+nav{
+	display: grid-row;
+	grid-template-rows: 2% 1fr 1fr 1fr 1fr  2%;
+	background: #383131;
+	color: #FFFFFF;	
+	/*min-height: 10vh;*/
+	width:100%
+	/* margin : auto; */
+	/*display: flex;*/
+	justify-content: space-between;
+	align-items:left;
+	padding: 20px  80px;
+	left:0px;
+	top:0px;
+
+	
+}
+
+.blog{
+	grid-row: 3;
+	text-align: right;
+	font-family: PopLight;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	padding-right: 120px;
+
+	color: #FFFFFF;
+}
+.logo
+{
+	padding-left: 100px;
+	grid-row:1;
+	text-align: left;
+	font-family: PopRegular;
+	line-height:0.2;	
+}
+
+.landing-page-details1{
+	font-family: PopRegular;
+	grid-row: 2;
+	text-align: left;
+	padding-left: 250px;
+	line-height: 1;
+}
+.landing-page-details2{
+	font-family: PopRegular;
+	grid-row: 3;
+	text-align: left;
+	padding-left: 250px;
+	line-height: 1;
+}
+
+
+.social-logo{
+	grid-row: 4;
+	
+  	right: 0px;
+
+  	padding-right:200px;
+}
