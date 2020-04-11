@@ -1,89 +1,191 @@
 *,
-*::before
-*::after{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} 
-@font-face{
-	font-family: PopLight;
-	src: url('./fonts/Poppins-Light.ttf');
-}
-@font-face{
-	font-family: PopRegular;
-	src: url('./fonts/Poppins-Regular.ttf');
-}
-body{
-	font-family: PopLight;
-	background: #C9C9C9;
-
+*::before *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.page{
-	color: black;
-	min-height: 70vh;
-	display:grid;
-	grid-template-rows:  1fr 2fr 1fr 1fr;
+@font-face {
+    font-family: PopLight;
+    src: url("./fonts/Poppins-Light.ttf");
 }
 
-nav{
-	display: grid-row;
-	grid-template-rows: 2% 1fr 1fr 1fr 1fr  2%;
-	background: #383131;
-	color: #FFFFFF;	
-	/*min-height: 10vh;*/
-	width:100%
-	/* margin : auto; */
-	/*display: flex;*/
-	justify-content: space-between;
-	align-items:left;
-	padding: 20px  80px;
-	left:0px;
-	top:0px;
-
-	
+@font-face {
+    font-family: PopRegular;
+    src: url("./fonts/Poppins-Regular.ttf");
 }
 
-.blog{
-	grid-row: 3;
-	text-align: right;
-	font-family: PopLight;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	padding-right: 120px;
-
-	color: #FFFFFF;
-}
-.logo
-{
-	padding-left: 100px;
-	grid-row:1;
-	text-align: left;
-	font-family: PopRegular;
-	line-height:0.2;	
+html,
+body {
+    background: #c9c9c9 !important;
 }
 
-.landing-page-details1{
-	font-family: PopRegular;
-	grid-row: 2;
-	text-align: left;
-	padding-left: 250px;
-	line-height: 1;
-}
-.landing-page-details2{
-	font-family: PopRegular;
-	grid-row: 3;
-	text-align: left;
-	padding-left: 250px;
-	line-height: 1;
+.full-screen {
+    position: relative !important;
+    height: 100vh;
+    width: max-width;
 }
 
+.jumbotron {
+    width: max-width !important;
+    height: 30vh;
+    padding: 0.8vw 0.8vw !important;
+    background-color: #c9c9c9 !important;
+}
 
-.social-logo{
-	grid-row: 4;
-	
-  	right: 0px;
+.jumbotron.text-center {
+    position: relative !important;
+    height: 100% !important;
+    background-color: #383131 !important;
+    font-size: 100vw;
 
-  	padding-right:200px;
+    padding-left: 10vw !important;
+    padding-right: 8vw !important;
+    padding-top: 6vh !important;
+    padding-bottom: 0vh !important;
+
+}
+
+.head {
+    margin-bottom: 0vh;
+    text-align: left;
+    color: #d5d6d7;
+    font-family: PopRegular;
+    font-size: 8%;
+}
+
+.head2 {
+    text-align: left;
+    color: #c9c9c9;
+    font-family: PopLight;
+    font-size: 4%;
+}
+
+.topnav-right {
+    position: absolute;
+    top: 15vh !important;
+    right: 8vh !important;
+    float: right;
+    font-size: 5%;
+    background-color: #383131 !important;
+
+}
+
+.topnav-right a {
+    font-size: 100%;
+    font-family: PopLight;
+    color: #d5d6d7 !important;
+    margin-left: 10vw !important;
+}
+
+.topnav-right.sticky {
+    position: fixed;
+    left: 0% !important;
+    top: 1vh !important;
+    width: 100vw;
+    height: 5vh;
+
+}
+
+
+.container {
+    padding-top: 4vh !important;
+    padding-left: 8vw !important;
+    padding-right: 8vw !important;
+    color: #000000;
+    font-size: 100vw;
+}
+
+.i1 {
+    font-size: 6% !important;
+}
+
+.i2 {
+    font-size: 3% !important;
+}
+
+
+
+.social-logo {
+    position: absolute;
+    width: 30vw;
+    height: 15vh;
+    bottom: 1vh;
+    right: 10vw;
+    padding: 1vw;
+}
+
+.column {
+    display: inline-block;
+    
+    margin: 0px;
+    padding-left: 10%;
+    width: 30%;
+}
+
+.social-logo.sticky {
+    position: fixed;
+    width: 6vw;
+    height: 22vh;
+    bottom: 10vh;
+    right: 5vw;
+    padding: 1vw;
+}
+
+.column.sticky {
+    display: inline; 
+    margin: 0px;
+    padding-left: 10%;
+    width: 50%;
+}
+
+
+.content {
+    position: absolute;
+    top: 100vh;
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+    color: #000000;
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* For tablets: */
+    .jumbotron.text-center {
+        font-size: 80vw;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    /* For desktop: */
+
+    .jumbotron.text-center {
+        font-size: 30vw;
+    }
+
+
+    .topnav-right {
+        font-size: 5%;
+        top: 15vh !important;
+        right: 8vh !important;
+    }
+
+    .container {
+        font-size: 70vw;
+    }
+
+    .social-logo {
+        width: 15vw;
+
+    }
+
+.social-logo.sticky {
+    position: fixed;
+    width: 5vw;
+    height: 22vh;
+    bottom: 10vh;
+    right: 5vw;
+    padding: 1vw;
+}
 }
