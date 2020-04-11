@@ -63,7 +63,7 @@ body {
 
 .topnav-right {
     position: absolute;
-    top: 15vh !important;
+    top: 20vh !important;
     right: 8vh !important;
     float: right;
     font-size: 5%;
@@ -155,6 +155,7 @@ body {
         font-size: 80vw;
     }
 
+
 }
 
 @media only screen and (min-width:1200px) {
@@ -169,6 +170,14 @@ body {
         font-size: 5%;
         top: 15vh !important;
         right: 8vh !important;
+    }
+
+    .i1 {
+        font-size: 4% !important;
+    }
+
+    .i2 {
+        font-size: 2% !important;
     }
 
     .container {
